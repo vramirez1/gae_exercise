@@ -19,8 +19,9 @@ The favicon.ico is the icon displayed by the navigator in the tab._
 Exercise
 --------
 __At every step, remember to test it using the development server provided in the Google App Engine SDK, then push the changes to your repository.  
-To do so, use the GUI to commit your changes, then push them. On a CLI, use git add [file]... to add files in the list to commit, so all the files you edited and created. then git commit -m "commit message" to commit the changes. Then git push , to push them to the repository on GitHub.  
-If you encounter any issue or misbehavior during testing, check the dev appserver logs.__
+To do so, use the GUI to commit your changes, then push them. On a CLI, use git add [file]... to add files in the list to commit, so all the files you edited and created. then git commit -m "commit message" to commit the changes. Then git push , to push them to the repository on GitHub.__  
+  
+__If you encounter any issue or misbehavior during testing, check the dev appserver logs.__
 
 1. Create an app  
 *Use the gae_exercise repository to create an app*  
