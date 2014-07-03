@@ -4,6 +4,7 @@ GAE Exercise
 Pre-requisite
 -------------
 
+1. Download and install the [Google App Engine SDK for Python](https://developers.google.com/appengine/downloads)
 1. Install a [git client](http://git-scm.com/downloads)
 2. Login into [GitHub](https://github.com) or create an account
 3. Set up GIT as explained in the [GitHub help](https://help.github.com/articles/set-up-git)
