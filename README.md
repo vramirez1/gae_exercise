@@ -18,6 +18,8 @@ The favicon.ico is the icon displayed by the navigator in the tab._
 
 Exercise
 --------
+__You Will be using the [Google App Engine Python tutorial and documentation](https://developers.google.com/appengine/docs/python/gettingstartedpython27/introduction), as well as any other document you see fit to complete the exercise.__  
+  
 __At every step, remember to test it using the development server provided in the Google App Engine SDK, then push the changes to your repository.  
 To do so, use the GUI to commit your changes, then push them. On a CLI, use git add [file]... to add files in the list to commit, so all the files you edited and created. then git commit -m "commit message" to commit the changes. Then git push , to push them to the repository on GitHub.__  
   
