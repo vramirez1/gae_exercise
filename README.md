@@ -6,10 +6,11 @@ Pre-requisite
 
 1. Install a [git client](http://git-scm.com/downloads)
 2. Login into [GitHub](https://github.com) or create an account
-3. Go to [ThomasMarcel/gae_exercise](https://github.com/ThomasMarcel/gae_exercise) repository
-4. Fork it
-5. Add ThomasMarcel to the list of collaborators of your repository, on the repository page, in the menu on the right side of the screen: Settings > Collaborators
-6. Clone your new repository - git clone https://github.com/username/repository_name.git - , the link appears on the right side under the "Settings" menu item  
+3. [Set up GIT](https://help.github.com/articles/set-up-git) as explained in the GitHub help
+4. Go to [ThomasMarcel/gae_exercise](https://github.com/ThomasMarcel/gae_exercise) repository
+5. Fork it
+6. Add ThomasMarcel to the list of collaborators of your repository, on the repository page, in the menu on the right side of the screen: Settings > Collaborators
+7. Clone your new repository - git clone https://github.com/username/repository_name.git - , the link appears on the right side under the "Settings" menu item  
 _There are different files and folders inside the repository.  
 The templates folder is holding all the templates that the webapp2 framework will be parsing.  
 The static folder is for static files that will be accessed directly.  
