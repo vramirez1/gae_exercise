@@ -20,9 +20,9 @@ Exercise
 --------
 __You Will be using the [Google App Engine Python tutorial and documentation](https://developers.google.com/appengine/docs/python/gettingstartedpython27/introduction), as well as any other document you see fit to complete the exercise.__  
   
-__* At every step, remember to test it using the development server provided in the Google App Engine SDK, then push the changes to your repository. To do so, use the GUI to commit your changes, then push them. On a CLI, use git add [file]... to add files in the list to commit, so all the files you edited and created. then git commit -m "commit message" to commit the changes. Then git push , to push them to the repository on GitHub.__  
-__* If you encounter any issue or misbehavior during testing, check the dev appserver logs.__  
-__* Add logs at every stem you deem useful. Unlike compiled languages, Python only has runtime errors. So putting wrinting in the log before the line that is causing an error might be a good way of investigating what went wrong.__
+* At every step, remember to test it using the development server provided in the Google App Engine SDK, then push the changes to your repository. To do so, use the GUI to commit your changes, then push them. On a CLI, use git add [file]... to add files in the list to commit, so all the files you edited and created. then git commit -m "commit message" to commit the changes. Then git push , to push them to the repository on GitHub.
+* If you encounter any issue or misbehavior during testing, check the dev appserver logs.
+* Add logs at every stem you deem useful. Unlike compiled languages, Python only has runtime errors. So putting wrinting in the log before the line that is causing an error might be a good way of investigating what went wrong.
 
 1. Create an app  
 *Use the gae_exercise repository to create an app*  
