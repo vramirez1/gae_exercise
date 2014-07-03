@@ -14,16 +14,17 @@ Pre-requisite
 _There are different files and folders inside the repository.  
 The templates folder is holding all the templates that the webapp2 framework will be parsing.  
 The static folder is for static files that will be accessed directly.  
-The favicon.ico is the icon displayed by the navigator in the tab._
+The favicon.ico is the icon displayed by the navigator in the tab._  
+  
+__You Will be using the [Google App Engine Python tutorial and documentation](https://developers.google.com/appengine/docs/python/gettingstartedpython27/introduction), as well as any other document you see fit to complete the exercise.__  
+  
+**Some tips**  
+* At every step, remember to test it using the development server provided in the Google App Engine SDK, then push the changes to your repository. To do so, use the GUI to commit your changes, then push them. On a CLI, use git add [file]... to add files in the list to commit, so all the files you edited and created. then git commit -m "commit message" to commit the changes. Then git push , to push them to the repository on GitHub.
+* If you encounter any issue or misbehavior during testing, check the dev appserver logs.
+* Add logs at every step you deem useful. Unlike compiled languages, Python only has runtime errors. So putting wrinting in the log before the line that is causing an error might be a good way of investigating what went wrong.
 
 Exercise
 --------
-__You Will be using the [Google App Engine Python tutorial and documentation](https://developers.google.com/appengine/docs/python/gettingstartedpython27/introduction), as well as any other document you see fit to complete the exercise.__  
-  
-* At every step, remember to test it using the development server provided in the Google App Engine SDK, then push the changes to your repository. To do so, use the GUI to commit your changes, then push them. On a CLI, use git add [file]... to add files in the list to commit, so all the files you edited and created. then git commit -m "commit message" to commit the changes. Then git push , to push them to the repository on GitHub.
-* If you encounter any issue or misbehavior during testing, check the dev appserver logs.
-* Add logs at every stem you deem useful. Unlike compiled languages, Python only has runtime errors. So putting wrinting in the log before the line that is causing an error might be a good way of investigating what went wrong.
-
 1. Create an app  
 *Use the gae_exercise repository to create an app*  
 	1. Modify the app.yaml configuration file to match your app settings
