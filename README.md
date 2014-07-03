@@ -38,3 +38,7 @@ __If you encounter any issue or misbehavior during testing, check the dev appser
 	2. Modify the "/" handler to use templates/form.html template instead of templates/index.html
 	3. Create a new handler for the "/main" route, accepting POST method so the form in templates/form.html redirects to it
 	4. Get the "username" variable from the form and pass it to the template so it is displayed
+3. Use the datastore
+	1. Define in a file called models.py a Datastore model for users with email, name and created to save the user creation date, which should be populated automatically when the entity is saved
+	2. Define a method of the class to get a user by his email address
+	3. Modify the "/main" handler to check if there already is a user with the same email. I there isn't, then put it in the Datastore. Else, just pass a template parameter to the template with his data, to display his name and email on a modified template
