@@ -23,4 +23,7 @@ __At every step, remember to push the changes to your repository.__
 	1. Modify the app.yaml configuration file to match your app settings
 	2. Create a handler for the favicon.ico
 	3. Create a handler for the static folder
+	4. Create main.py with a handler or the root URL "/"
+	5. Make the handler print the classis "Hello World" sentence
+	6. Try your application locally
 2. Parse templates
