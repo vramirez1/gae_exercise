@@ -48,6 +48,11 @@ Exercise
 	2. Define a method of the class to get a user by his email address  
 *Tip: use the @classmethod decorator*
 	3. Modify the "/main" handler to check if there already is a user with the same email. I there isn't, then put it in the Datastore. Else, just pass a template parameter to the template with his data, to display his name and email on a modified template
-3. Optimize the use o the SDK
+3. Optimize the use of the SDK
 	1. Add parameters to the dev appserver launch script to use a speciic datastore and blobstore  
-*Tip: this way you ensure consistency o your test data*
+*Tip: check the way to do it for your OS version of the SDK. This way you ensure consistency o your test data*
+4. Use the blobstore
+5. Try the user service
+6. Set cron jobs
+7. Set asynchronous tasks
+8. Set a channel
