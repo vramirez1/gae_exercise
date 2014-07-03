@@ -45,5 +45,5 @@ __If you encounter any issue or misbehavior during testing, check the dev appser
 3. Use the datastore
 	1. Define in a file called models.py a Datastore model for users with email, name and created to save the user creation date, which should be populated automatically when the entity is saved
 	2. Define a method of the class to get a user by his email address  
-*Tip: use the @classmethod controller*
+*Tip: use the @classmethod decorator*
 	3. Modify the "/main" handler to check if there already is a user with the same email. I there isn't, then put it in the Datastore. Else, just pass a template parameter to the template with his data, to display his name and email on a modified template
