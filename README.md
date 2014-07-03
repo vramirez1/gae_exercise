@@ -18,7 +18,7 @@ The favicon.ico is the icon displayed by the navigator in the tab._
 Exercise
 --------
 __At every step, remember to push the changes to your repository.  
-To do so, use the GUI to commit your changes, then push them. On a CLI, use git add [file]... to add files in the list to commit, so all the files you edited and created. then git commit -m "commit message" to commit the changes. Then git push , to push them to the repository on GitHub__
+To do so, use the GUI to commit your changes, then push them. On a CLI, use git add [file]... to add files in the list to commit, so all the files you edited and created. then git commit -m "commit message" to commit the changes. Then git push , to push them to the repository on GitHub.__
 
 1. Create an app  
 *Use the gae_exercise repository to create an app*  
@@ -28,4 +28,5 @@ To do so, use the GUI to commit your changes, then push them. On a CLI, use git 
 	4. Create main.py with a handler or the root URL "/"
 	5. Make the handler print the classis "Hello World" sentence
 	6. Try your application locally
-2. Parse templates
+2. Use templates
+	1. Modify main.py to use the template templates/index.html instead of printing, and pass the "Hello World" string as a template value so it is displayed in the template
