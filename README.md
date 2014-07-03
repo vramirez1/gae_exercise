@@ -33,4 +33,4 @@ To do so, use the GUI to commit your changes, then push them. On a CLI, use git 
 	1. Modify main.py to use the template templates/index.html instead of printing, and pass the "Hello World" string as a template value so it is displayed in the template
 	2. Modify the "/" handler to use templates/form.html template instead of templates/index.html
 	3. Create a new handler for the "/main" route, accepting POST method so the form in templates/form.html redirects to it
-	4. Get the "username" variable rom the form and pass it to the template so it is displayed
+	4. Get the "username" variable from the form and pass it to the template so it is displayed
