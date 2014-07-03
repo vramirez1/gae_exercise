@@ -49,5 +49,5 @@ Exercise
 *Tip: use the @classmethod decorator*
 	3. Modify the "/main" handler to check if there already is a user with the same email. I there isn't, then put it in the Datastore. Else, just pass a template parameter to the template with his data, to display his name and email on a modified template
 3. Optimize the use o the SDK
-	1. Add parameters to the dev appserver launch script to use a speciic datastore and blobstore
+	1. Add parameters to the dev appserver launch script to use a speciic datastore and blobstore  
 *Tip: this way you ensure consistency o your test data*
