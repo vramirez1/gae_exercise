@@ -16,7 +16,10 @@ The favicon.ico is the icon displayed by the navigator in the tab._
 
 Exercise
 --------
-1. Use the gae_exercise repository to create an app
+__At every step, remember to push the changes to your repository.__
+1. Create an app
+*Use the gae_exercise repository to create an app*
 	1. Modify the app.yaml configuration file to match your app settings
 	2. Create a handler for the favicon.ico
 	3. Create a handler for the static folder
+2. Parse templates
