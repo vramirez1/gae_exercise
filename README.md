@@ -29,16 +29,21 @@ __If you encounter any issue or misbehavior during testing, check the dev appser
 *Use the gae_exercise repository to create an app*  
 	1. Modify the app.yaml configuration file to match your app settings
 	2. Create a handler for the favicon.ico
+*Tip: check the static handlers declaration*
 	3. Create a handler for the static folder
 	4. Create main.py with a WSGI handler or the root URL "/"
+*Tip: the handler in files look like application = webapp2.WSGIApplication*
 	5. Make the handler print the classis "Hello World" sentence
 	6. Try your application locally
 2. Use templates
 	1. Modify main.py to use the template templates/index.html instead of printing, and pass the "Hello World" string as a template value so it is displayed in the template
+*Tip: you can use webapp2, jinja or django*
 	2. Modify the "/" handler to use templates/form.html template instead of templates/index.html
 	3. Create a new handler for the "/main" route, accepting POST method so the form in templates/form.html redirects to it
+*Tip: the def get(self): line is to define a handling method for the GET HTTP method*
 	4. Get the "username" variable from the form and pass it to the template so it is displayed
 3. Use the datastore
 	1. Define in a file called models.py a Datastore model for users with email, name and created to save the user creation date, which should be populated automatically when the entity is saved
 	2. Define a method of the class to get a user by his email address
+*Tip: use the @classmethod controller*
 	3. Modify the "/main" handler to check if there already is a user with the same email. I there isn't, then put it in the Datastore. Else, just pass a template parameter to the template with his data, to display his name and email on a modified template
