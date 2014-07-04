@@ -42,16 +42,18 @@ Exercise
 	1. Modify main.py to use the template templates/index.html instead of printing, and pass the "Hello World" string as a template value so it is displayed in the template  
 *Tip: you can use webapp2, jinja or django*
 	2. Modify the "/" handler to use templates/form.html template instead of templates/index.html
-	3. Create a new handler for the "/main" route, accepting POST method so the form in templates/form.html redirects to it  
+	3. Create a new handler that uses the templates/index.html template for the "/main" route, accepting POST method so the form in templates/form.html redirects to it
 *Tip: the def get(self): line is to define a handling method for the GET HTTP method*
 	4. Get the "username" variable from the form and pass it to the template so it is displayed
 3. Use the datastore
 	1. Define in a file called models.py a Datastore model for users with email, name and created to save the user creation date, which should be populated automatically when the entity is saved
 	2. Define a method of the class to get a user by his email address  
 *Tip: use the @classmethod decorator*
-	3. Modify the "/main" handler to check if there already is a user with the same email. I there isn't, then put it in the Datastore. Else, just pass a template parameter to the template with his data, to display his name and email on a modified template
+	3. Modify the templates/form.html template to also ask for the user's email
+	4. Modify the "/main" handler to check if there already is a user with the same email. I there isn't, then put it in the Datastore.
+	5. Pass a template parameter to the templates/index.html template the user data, and modify the template to display his name and email
 3. Optimize the use of the SDK
-	1. Add parameters to the dev appserver launch script to use a speciic datastore and blobstore  
+	1. Add parameters to the dev appserver at launch to use a specific datastore and blobstore  
 *Tip: check the way to do it for your OS version of the SDK. This way you ensure consistency o your test data*
 4. Use the blobstore
 5. Try the user service
