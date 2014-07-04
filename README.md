@@ -55,7 +55,7 @@ Exercise
 	5. Pass a template parameter to the templates/index.html template the user data, and modify the template to display his name and email
 3. Optimize the use of the SDK
 	1. Add parameters to the dev appserver at launch to use a specific datastore and blobstore  
-*Tip: check the way to do it for your OS version of the SDK. This way you ensure consistency o your test data*
+*Tip: check the way to do it for your OS version of the SDK. This way you ensure consistency of your test data between tests*
 4. Set the handlers on track for the next exercises
 	1. Modify the "/" handler to accept an "email" parameter
 	2. Get the "email" parameter and check if a user in the datastore that goes by that email. If there's one, pass the user to the templates/form.html
@@ -64,8 +64,9 @@ Exercise
 	4. Try to access your app adding as parameter the email of a user you previously set, e.g. [http://localhost:8080/?email=thomas.alcala@gmail.com](http://localhost:8080/?email=thomas.alcala@gmail.com)  
 *Tip: Use the [%if %] condition in the template  
 If you don't have any user set, please go through the user creation steps as set before*
+	5. Modify the templates/form.html to display the user information if a valid email is passed to it as a GET parameter
 5. Use the blobstore
-	1. Add a blobkey property to the user model
+	1. Add a blobkey property to the user model to store the future key of the blob we'll use as "profile picture"
 6. Try the user service
 7. Set cron jobs
 8. Set asynchronous tasks
