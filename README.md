@@ -57,9 +57,12 @@ Exercise
 	1. Add parameters to the dev appserver at launch to use a specific datastore and blobstore  
 *Tip: check the way to do it for your OS version of the SDK. This way you ensure consistency o your test data*
 4. Set the handlers on track for the next exercises
-	1. Modify the "/" handler to accept a "user" parameter
-	2. Pass the "user" parameter to the templates/form.html if it is populated  
+	1. Modify the "/" handler to accept an "email" parameter
+	2. Get the "email" parameter and check if a user in the datastore that goes by that email. If there's one, pass the user to the templates/form.html
 *Tip: in the case of a parameter passed through RequestHandler, when it isn't actually passed, the variable isn't = None, it is an empty string ''*
+	3. Modify the templates/form.html to only display the form if the user parameter isn't passed to it, else display the user data
+	4. Try to access your app adding as parameter the email of a user you previously set, e.g. [http://localhost:8080/?email=thomas.alcala@gmail.com](http://localhost:8080/?email=thomas.alcala@gmail.com)
+*Tip: Use the [%if %] condition in the template*
 5. Use the blobstore
 6. Try the user service
 7. Set cron jobs
