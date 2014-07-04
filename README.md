@@ -62,7 +62,8 @@ Exercise
 *Tip: in the case of a parameter passed through RequestHandler, when it isn't actually passed, the variable isn't = None, it is an empty string ''*
 	3. Modify the templates/form.html to only display the form if the user parameter isn't passed to it, else display the user data
 	4. Try to access your app adding as parameter the email of a user you previously set, e.g. [http://localhost:8080/?email=thomas.alcala@gmail.com](http://localhost:8080/?email=thomas.alcala@gmail.com)
-*Tip: Use the [%if %] condition in the template*
+*Tip: Use the [%if %] condition in the template  
+If you don't have any user set, please go through the user creation steps as set before*
 5. Use the blobstore
 6. Try the user service
 7. Set cron jobs
