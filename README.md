@@ -56,8 +56,12 @@ Exercise
 3. Optimize the use of the SDK
 	1. Add parameters to the dev appserver at launch to use a specific datastore and blobstore  
 *Tip: check the way to do it for your OS version of the SDK. This way you ensure consistency o your test data*
-4. Use the blobstore
-5. Try the user service
-6. Set cron jobs
-7. Set asynchronous tasks
-8. Set a channel
+4. Set the handlers on track for the next exercises
+	1. Modify the "/" handler to accept a "user" parameter
+	2. Pass the "user" parameter to the templates/form.html if it is populated  
+*Tip: in the case of a parameter passed through RequestHandler, when it isn't actually passed, the variable isn't = None, it is an empty string ''*
+5. Use the blobstore
+6. Try the user service
+7. Set cron jobs
+8. Set asynchronous tasks
+9. Set a channel
