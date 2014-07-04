@@ -65,6 +65,7 @@ Exercise
 *Tip: Use the [%if %] condition in the template  
 If you don't have any user set, please go through the user creation steps as set before*
 5. Use the blobstore
+	1. Add a blobkey property to the user model
 6. Try the user service
 7. Set cron jobs
 8. Set asynchronous tasks
