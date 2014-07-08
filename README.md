@@ -17,14 +17,14 @@ The templates folder is holding all the templates that the webapp2 framework wil
 The static folder is for static files that will be accessed directly.  
 The favicon.ico is the icon displayed by the navigator in the tab._  
 8. Remove the lines regarding main.py and models.py from the .gitignore file
-  
+
 __You Will be using the [Google App Engine Python tutorial and documentation](https://developers.google.com/appengine/docs/python/gettingstartedpython27/introduction), as well as any other document you see fit to complete the exercise.__  
-  
+
 **Some tips**  
 * At every step, remember to test it using the development server provided in the Google App Engine SDK, then push the changes to your repository. To do so, use the GUI to commit your changes, then push them. On a CLI, use git add [file]... to add files in the list to commit, so all the files you edited and created. then git commit -m "commit message" to commit the changes. Then git push , to push them to the repository on GitHub.
 * If you encounter any issue or misbehavior during testing, check the dev appserver logs.
 * Add logs at every step you deem useful. Unlike compiled languages, Python only has runtime errors. So writing in the log before the line that is causing an error might be a good way of investigating what went wrong.
-  
+
 *Feel free to contact me for help, revision or anything at thomas.alcala@gmail.com*
 
 Exercise
@@ -72,7 +72,7 @@ _**Check the different handlers in profile.handlers, what they do. For your conv
 	3. Modify the upload handler and your form to be able to manage when the data sent by form is from the picture form or the cv form  
 *Tip: you can add a hidden input in the form that goes by the name type and will have value "picture" in one form and "cv" in the other*
 	4. When the user is redirected after saving the cv in the datastore, unlike with a picture that can be served directly, you should add a link to the file  
-*Tip: Use something like <a href="/serve/filekey">C.V.</a>, passing the filekey to it by a template value*
+*Tip: Use something like `<a href="/serve/filekey">C.V.</a>`, passing the filekey to it by a template value*
 6. Try the user service
 7. Set cron jobs
 8. Set asynchronous tasks
