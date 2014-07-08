@@ -71,7 +71,7 @@ _**Check the different handlers in profile.handlers, what they do. For your conv
 	2. In a similar fashion as the user picture is working, modify the template to display a form to upload a CV when the user hasn't one
 	3. Modify the upload handler and your form to be able to manage when the data sent by form is from the picture form or the cv form  
 *Tip: you can add a hidden input in the form that goes by the name type and will have value "picture" in one form and "cv" in the other*
-	4. When the user is redirected after saving the cv in the datastore, unlike with a picture that can be served directly, you should add a link to the file
+	4. When the user is redirected after saving the cv in the datastore, unlike with a picture that can be served directly, you should add a link to the file  
 *Tip: Use something like <a href="/serve/filekey">C.V.</a>, passing the filekey to it by a template value*
 6. Try the user service
 7. Set cron jobs
