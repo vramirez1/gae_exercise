@@ -67,7 +67,12 @@ You may have to use your /register route to register new users with email to you
 5. Use the blobstore  
 _Take your time to check what routes.py does, what template it use_  
 _**Check the different handlers in profile.handlers, what they do. For your conveniance a blobstore upload handler and a blob serve handler are already deined, very similar to the ones in the Google App Engine developers documentation, only to save the data in the datastore for persistence**_
-	1. Add a blobkey property called "avatar" to the User model to store the future key of the blob that will be used as avatar for the user
+	1. Add a blobkey property called "cv" to the User model to store the future key of the blob that will be used to store the CV of the user
+	2. In a similar fashion as the user picture is working, modify the template to display a form to upload a CV when the user hasn't one
+	3. Modify the upload handler and your form to be able to manage when the data sent by form is from the picture form or the cv form  
+*Tip: you can add a hidden input in the form that goes by the name type and will have value "picture" in one form and "cv" in the other*
+	4. When the user is redirected after saving the cv in the datastore, unlike with a picture that can be served directly, you should add a link to the file
+*Tip: Use something like <a href="/serve/filekey">C.V.</a>, passing the filekey to it by a template value*
 6. Try the user service
 7. Set cron jobs
 8. Set asynchronous tasks
