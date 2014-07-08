@@ -24,6 +24,19 @@ class ProfileHandler(webapp2.RequestHandler):
 			if user.picture is None:
 				upload_url = blobstore.create_upload_url('/upload')
 				template_values['upload_url'] = upload_url
+			else:
+				blob_info = blobstore.BlobInfo.get(user.picture)
+				try:
+					blob_part = blobstore.fetch_data(blob_info, 0, 10)
+				except Exception as e:
+					try:
+						logging.error('Couldn\'t fetch picture %s for user %s. Removing the picture for the user.' % (blob_info.filename, user.email))
+						blob_info.delete()
+					except AttributeError, e:
+						logging.error('The picture for user %s couldn\'t be found. Removing it from the user properties.' % user.email)
+					user.picture = None
+					user.put()
+					#template_values.pop('upload_url')
 
 		logging.warning('os var: %s' % os.path.dirname(__file__))
                 template = JINJA_ENVIRONMENT.get_template('templates/profile.html')

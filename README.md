@@ -31,13 +31,13 @@ Exercise
 --------
 1. Create an app  
 *Use the gae_exercise repository to create an app*  
-	1. Modify the app.yaml configuration file to match your app settings
-	2. Create a handler for the favicon.ico  
-*Tip: check the static handlers declaration*
-	3. Create a handler for the static folder
-	4. Create main.py with a WSGI handler or the root URL "/"  
+	1. Create main.py with a WSGI handler or the root URL "/"  
 *Tip: the handler in files look like application = webapp2.WSGIApplication*
-	5. Make the handler print the classis "Hello World" sentence
+	2. Modify the app.yaml configuration file to match your app settings
+	3. Create a handler for the favicon.ico  
+*Tip: check the static handlers declaration*
+	4. Create a handler for the static folder
+	5. Make the "/" handler in main.py print the classic "Hello World" sentence
 	6. Try your application locally
 2. Use templates
 	1. Modify main.py to use the template templates/index.html instead of printing, and pass the "Hello World" string as a template value so it is displayed in the template  

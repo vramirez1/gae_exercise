@@ -1,5 +1,6 @@
 *.pyc
 templates/*-modified.html
 ds1
+bs1
 main.py
 models.py
