@@ -66,9 +66,7 @@ You may have to use your /register route to register new users with email to you
 	4. Try to access your app adding as parameter the email of a user you previously set, e.g. [http://localhost:8080/?email=thomas.alcala@gmail.com](http://localhost:8080/?email=thomas.alcala@gmail.com)  
 5. Use the blobstore  
 _Take your time to check what routes.py does, what template it use_  
-  
 _**Check the different handlers in profile.handlers, what they do. For your conveniance a blobstore upload handler and a blob serve handler are already deined, very similar to the ones in the Google App Engine developers documentation, only to save the data in the datastore for persistence**_
-  
 	1. Add a blobkey property called "avatar" to the User model to store the future key of the blob that will be used as avatar for the user
 6. Try the user service
 7. Set cron jobs
