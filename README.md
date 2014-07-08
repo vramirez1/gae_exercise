@@ -47,8 +47,8 @@ Exercise
 *Tip: the def get(self): line is to define a handling method for the GET HTTP method*
 	4. Get the "username" variable from the form and pass it to the template so it is displayed
 3. Use the datastore
-	1. Define in a file called models.py a Datastore model for users with email, name and created to save the user creation date, which should be populated automatically when the entity is saved
-	2. Define a method of the class to get a user by his email address  
+	1. Define in a file called models.py a Datastore model for users called "User", with email, name and created to save the user creation date, which should be populated automatically when the entity is saved
+	2. Define a method "get_by_email" of the class to get a user by his email address  
 *Tip: use the @classmethod decorator*
 	3. Modify the templates/form.html template to also ask for the user's email
 	4. Modify the "/main" handler to check if there already is a user with the same email. I there isn't, then put it in the Datastore.
@@ -56,17 +56,17 @@ Exercise
 3. Optimize the use of the SDK
 	1. Add parameters to the dev appserver at launch to use a specific datastore and blobstore  
 *Tip: check the way to do it for your OS version of the SDK. This way you ensure consistency of your test data between tests*
-4. Set the handlers on track for the next exercises
-	1. Modify the "/" handler to accept an "email" parameter
-	2. Get the "email" parameter and check if a user in the datastore that goes by that email. If there's one, pass the user to the templates/form.html
-*Tip: in the case of a parameter passed through RequestHandler, when it isn't actually passed, the variable isn't = None, it is an empty string ''*
-	3. Modify the templates/form.html to only display the form if the user parameter isn't passed to it, else display the user data
+4. Prepare your app for the next exercises
+	1. Modify the current "/" handling to become "/register"  
+_Modify app.yaml so the handler for "/", which uses main.py becomes instead "/register.*"  
+Modify the WSGIapplication in main.py to change "/" to "/register and "/main" to "/registered_
+	2. Add a handler for "/.\*" that uses routes.py as script  
+*routes.py imports the proile module, whose handler profile.ProileHandler accepts an email parameter in its GET method, then looks or a  user registered in the datastore with the email  
+You may have to use your /register route to register new users with email to your datastore if you didn't do so earlier during the exercises*
 	4. Try to access your app adding as parameter the email of a user you previously set, e.g. [http://localhost:8080/?email=thomas.alcala@gmail.com](http://localhost:8080/?email=thomas.alcala@gmail.com)  
-*Tip: Use the [%if %] condition in the template  
-If you don't have any user set, please go through the user creation steps as set before*
-	5. Modify the templates/form.html to display the user information if a valid email is passed to it as a GET parameter
 5. Use the blobstore
-	1. Add a blobkey property to the user model to store the future key of the blob we'll use as "profile picture"
+_Take your time to check what routes.py does, what template it uses, and what does the proffile module do_
+	1. Add a blobkey property called "picture" to the User model to store the future key of the blob that will be used as "profile picture"
 6. Try the user service
 7. Set cron jobs
 8. Set asynchronous tasks
