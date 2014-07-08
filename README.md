@@ -58,15 +58,16 @@ Exercise
 *Tip: check the way to do it for your OS version of the SDK. This way you ensure consistency of your test data between tests*
 4. Prepare your app for the next exercises
 	1. Modify the current "/" handling to become "/register"  
-_Modify app.yaml so the handler for "/", which uses main.py becomes instead "/register.*"  
-Modify the WSGIapplication in main.py to change "/" to "/register and "/main" to "/registered_
+_Modify app.yaml so the handler for "/", which uses main.py becomes instead "/register.*", and add a handler for "/main" which also uses main.py  
+Modify the WSGIapplication in main.py to change "/" to "/register_
 	2. Add a handler for "/.\*" that uses routes.py as script  
-*routes.py imports the proile module, whose handler profile.ProileHandler accepts an email parameter in its GET method, then looks or a  user registered in the datastore with the email  
+*routes.py imports the profile module, whose handler profile.handlers.ProfileHandler accepts an email parameter in its GET method, then looks or a  user registered in the datastore with the email  
 You may have to use your /register route to register new users with email to your datastore if you didn't do so earlier during the exercises*
 	4. Try to access your app adding as parameter the email of a user you previously set, e.g. [http://localhost:8080/?email=thomas.alcala@gmail.com](http://localhost:8080/?email=thomas.alcala@gmail.com)  
-5. Use the blobstore
-_Take your time to check what routes.py does, what template it uses, and what does the proffile module do_
-	1. Add a blobkey property called "picture" to the User model to store the future key of the blob that will be used as "profile picture"
+5. Use the blobstore  
+_Take your time to check what routes.py does, what template it uses_
+_**Check the different handlers in profile.handlers, what they do. For your conveniance a blobstore upload handler and a blob serve handler are already deined, very similar to the ones in the Google App Engine developers documentation, only to save the data in the datastore for persistence**_
+	1. Add a blobkey property called "avatar" to the User model to store the future key of the blob that will be used as avatar for the user
 6. Try the user service
 7. Set cron jobs
 8. Set asynchronous tasks

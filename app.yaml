@@ -5,8 +5,14 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /.*
+- url: /register.*
   script: main.application
+
+- url: /main
+  script: main.application
+
+- url: /.*
+  script: routes.application
 
 libraries:
 - name: webapp2

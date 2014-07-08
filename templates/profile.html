@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id="maincontent">
+{% if user %}
+	<h1>Hello, {{ user.name }} ({{ user.email }})!</h1>
+	{% if upload_url %}
+		<form action="{{ upload_url }}" method="POST" enctype="multipart/form-data">
+			<input type="file" name="picture" /><br />
+			<input type="hidden" name="email" value="{{ user.email }}" />
+			<button>Upload</button>
+		</form>
+	{% else %}
+		<img src="/serve/{{ user.picture }}" width="600" />
+	{% endif %}
+{% else %}
+	<form action ="/" method="GET">
+		Write a registered user email<br />
+		<input name="email" /><br />
+		<button>Send</button>
+	</form><br />
+	No users set? <a href="/register">Register</a>
+{% endif %}
+
+</div>
+
+</body>
+</html>
